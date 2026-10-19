@@ -13,7 +13,7 @@ The main Babel packages only transform JavaScript _syntax_: you also need to loa
 
 The easiest way to do so is to directly load the polyfill using a `<script ...>` tag:
 ```html
-<script src="https://unpkg.com/core-js-bundle@3.50.0/minified.js"></script>
+<script src="https://unpkg.com/core-js-bundle@3.51.0/minified.js"></script>
 ```
 
 However, this simple approach can potentially include a lot of unnecessary code. The Babel plugins implemented in this repository automatically inject the polyfills in your code, while trying to only load what is really needed. It does this based on your compilation targets and on what you are using in your code.
@@ -92,7 +92,7 @@ If you are interested in reading about all the options supported by these plugin
 | `es-shims` | [`babel-plugin-polyfill-es-shims`](./packages/babel-plugin-polyfill-es-shims) | `usage-global` and `usage-pure` |
 | `regenerator-runtime` | [`babel-plugin-polyfill-regenerator`](./packages/babel-plugin-polyfill-regenerator) | `entry-global`, `usage-global` and `usage-pure` |
 
-> 💡 We are maintaining support for `core-js` and `es-shims`, but we encourage you to implement a provider for your own polyfill, or for your favorite one! One of our goals is to encourage competition between different polyfills, to better balance the different trade offs like spec compliancy and code size.
+> 💡 We are maintaining support for `core-js` and `es-shims`, but we encourage you to implement a provider for your own polyfill, or for your favorite one! One of our goals is to encourage competition between different polyfills, to better balance the different trade offs like spec compliance and code size.
 >
 > If you want to implement support for a custom polyfill, you can use `@babel/helper-define-polyfill-provider`. ([`docs/polyfill-provider.md`](https://github.com/babel/babel-polyfills/blob/main/docs/polyfill-provider.md).)
 
@@ -223,7 +223,7 @@ In the last three years and a half, `@babel/preset-env` has shown its full poten
 So far Babel provided three different ways to inject `core-js` polyfills in the source code:
 
 - By using `@babel/preset-env`'s `useBuiltIns: "entry"` option, it is possible to inject self-installing polyfills for every ECMAScript functionality not natively supported by the target browsers;
-- By using `@babel/preset-env`'s `useBuiltIns: "usage"`, Babel will only inject self-installing polyfills for unsupported ECMAScript features but _only_ if they are actually used in the input souce code;
+- By using `@babel/preset-env`'s `useBuiltIns: "usage"`, Babel will only inject self-installing polyfills for unsupported ECMAScript features but _only_ if they are actually used in the input source code;
 - By using `@babel/plugin-transform-runtime`, Babel will inject "pure" polyfills (which, unlike self-installing ones, don't pollute the global scope) for every used ECMAScript feature supported by `core-js`. This is usually used by library authors.
 
 Our old approach has two main problems:

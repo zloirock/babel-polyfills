@@ -20,7 +20,7 @@ Add this plugin to your Babel configuration:
 
 ```json
 {
-  "plugins": [["polyfill-corejs3", { "method": "usage-global", "version": "3.50" }]]
+  "plugins": [["polyfill-corejs3", { "method": "usage-global", "version": "3.51" }]]
 }
 ```
 
@@ -55,7 +55,7 @@ If you are a library author, specify a reasonably modern `core-js` version in yo
 ```json
 {
   "dependencies": {
-    "core-js": "^3.50.0"
+    "core-js": "^3.51.0"
   }
 }
 ```

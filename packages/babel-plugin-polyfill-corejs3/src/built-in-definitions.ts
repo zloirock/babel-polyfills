@@ -821,7 +821,7 @@ export const InstanceProperties = {
   bind: define("instance/bind", ["es.function.bind"]),
   blink: define(null, ["es.string.blink"]),
   bold: define(null, ["es.string.bold"]),
-  chunks: define(null, ["esnext.iterator.chunks", ...IteratorDependencies]),
+  chunks: define(null, ["es.iterator.chunks", ...IteratorDependencies]),
   clamp: define("instance/clamp", ["esnext.number.clamp"]),
   codePointAt: define("instance/code-point-at", ["es.string.code-point-at"]),
   codePoints: define("instance/code-points", ["esnext.string.code-points"]),
@@ -915,7 +915,7 @@ export const InstanceProperties = {
   includes: define("instance/includes", [
     "es.array.includes",
     "es.string.includes",
-    "esnext.iterator.includes",
+    "es.iterator.includes",
     ...IteratorDependencies,
   ]),
   indexed: define(null, [
@@ -929,7 +929,7 @@ export const InstanceProperties = {
   italics: define(null, ["es.string.italics"]),
   join: define(null, [
     "es.array.join",
-    "esnext.iterator.join",
+    "es.iterator.join",
     ...IteratorDependencies,
   ]),
   keys: define("instance/keys", ArrayNatureIteratorsWithTag),
@@ -1042,7 +1042,7 @@ export const InstanceProperties = {
   unshift: define("instance/unshift", ["es.array.unshift"]),
   unThis: define("instance/un-this", ["esnext.function.un-this"]),
   values: define("instance/values", ArrayNatureIteratorsWithTag),
-  windows: define(null, ["esnext.iterator.windows", ...IteratorDependencies]),
+  windows: define(null, ["es.iterator.windows", ...IteratorDependencies]),
   with: define("instance/with", ["es.array.with"]),
   __defineGetter__: define(null, ["es.object.define-getter"]),
   __defineSetter__: define(null, ["es.object.define-setter"]),

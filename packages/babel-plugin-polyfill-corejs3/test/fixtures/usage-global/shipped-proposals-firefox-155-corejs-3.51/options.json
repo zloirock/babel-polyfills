@@ -1,0 +1,16 @@
+{
+  "externalHelpers": false,
+  "plugins": [
+    [
+      "@@/polyfill-corejs3",
+      {
+        "version": "3.51",
+        "method": "usage-global",
+        "shippedProposals": true
+      }
+    ]
+  ],
+  "targets": {
+    "firefox": "155"
+  }
+}

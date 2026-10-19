@@ -3,9 +3,7 @@
 export default new Set<string>([
   "esnext.array.group",
   "esnext.array.group-to-map",
-  "esnext.iterator.chunks",
-  "esnext.iterator.includes",
-  "esnext.iterator.join",
-  "esnext.iterator.windows",
+  "esnext.promise.all-keyed",
+  "esnext.promise.all-settled-keyed",
   "esnext.symbol.metadata",
 ]);

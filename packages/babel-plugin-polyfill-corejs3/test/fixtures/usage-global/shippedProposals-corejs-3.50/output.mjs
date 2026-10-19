@@ -118,6 +118,8 @@ import "core-js/modules/esnext.iterator.chunks.js";
 import "core-js/modules/esnext.iterator.includes.js";
 import "core-js/modules/esnext.iterator.join.js";
 import "core-js/modules/esnext.iterator.windows.js";
+import "core-js/modules/esnext.promise.all-keyed.js";
+import "core-js/modules/esnext.promise.all-settled-keyed.js";
 import "core-js/modules/esnext.symbol.metadata.js";
 import "core-js/modules/web.btoa.js";
 import "core-js/modules/web.dom-collections.for-each.js";
